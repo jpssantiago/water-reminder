@@ -1,3 +1,4 @@
+import 'package:app/localization/app_localization.dart';
 import 'package:flutter/material.dart';
 
 import 'package:app/widgets/filled_button.dart';
@@ -53,7 +54,11 @@ class _WelcomePageState extends State<WelcomePage> {
             Spacer(flex: 1),
             FilledButton(
               onTap: () {},
-              text: 'PRÓXIMO',
+              text: AppLocalizations.of(context)
+                  .translate(
+                    'global_next',
+                  )
+                  .toUpperCase(),
             ),
             Spacer(flex: 1),
           ],

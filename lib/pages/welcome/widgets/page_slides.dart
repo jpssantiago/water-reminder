@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:app/localization/app_localization.dart';
+
 class PageSlides extends StatelessWidget {
   final Function(int) onPageChanged;
 
@@ -7,30 +9,27 @@ class PageSlides extends StatelessWidget {
     @required this.onPageChanged,
   });
 
-  final List<dynamic> pages = [
-    {
-      'image': 'assets/images/welcome_0.png',
-      'title': 'Alimentação saudável',
-      'text':
-          'Uma alimentação saudável é essencial para manter uma vida saudável.',
-    },
-    {
-      'image': 'assets/images/welcome_1.png',
-      'title': 'Monitore seu desempenho',
-      'text':
-          'Monitore seu desempenho com gráficos, estatísticas, dicas e muito mais.',
-    },
-    {
-      'image': 'assets/images/welcome_2.png',
-      'title': 'Aplicativo intuitivo',
-      'text':
-          'Nosso aplicativo foi desenvolvido pensando na experiência do usuário.',
-    },
-  ];
-
   @override
   Widget build(BuildContext context) {
     final PageController controller = PageController();
+
+    final List<dynamic> pages = [
+      {
+        'image': 'assets/images/welcome_0.png',
+        'title': AppLocalizations.of(context).translate('welcome_0_title'),
+        'text': AppLocalizations.of(context).translate('welcome_0_text'),
+      },
+      {
+        'image': 'assets/images/welcome_1.png',
+        'title': AppLocalizations.of(context).translate('welcome_1_title'),
+        'text': AppLocalizations.of(context).translate('welcome_1_text'),
+      },
+      {
+        'image': 'assets/images/welcome_2.png',
+        'title': AppLocalizations.of(context).translate('welcome_2_title'),
+        'text': AppLocalizations.of(context).translate('welcome_2_text'),
+      },
+    ];
 
     final Size size = MediaQuery.of(context).size;
     return Container(
