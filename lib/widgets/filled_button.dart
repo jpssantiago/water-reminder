@@ -25,7 +25,7 @@ class FilledButton extends StatelessWidget {
         height: 45,
         decoration: BoxDecoration(
           color: color ?? Colors.blue,
-          borderRadius: BorderRadius.circular(2),
+          borderRadius: BorderRadius.circular(5),
         ),
         child: Center(
           child: Text(

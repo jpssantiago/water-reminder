@@ -53,7 +53,9 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
             Spacer(flex: 1),
             FilledButton(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushNamed('/user_setup');
+              },
               text: AppLocalizations.of(context)
                   .translate(
                     'global_next',

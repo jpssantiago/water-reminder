@@ -25,6 +25,8 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  sqflite: any
+  path: any
 
 
   # The following adds the Cupertino Icons font to your application.

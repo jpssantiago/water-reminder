@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:app/pages/user_setup/user_setup.dart';
 import 'package:app/pages/welcome/welcome_page.dart';
 
 import 'localization/localization_config.dart';
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/welcome',
       routes: {
         '/welcome': (context) => WelcomePage(),
+        '/user_setup': (context) => UserSetup(),
       },
       supportedLocales: LocalizationConfig.getSupportedLocales(),
       localizationsDelegates: LocalizationConfig.getLocalizationDelegates(),
