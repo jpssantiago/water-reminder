@@ -29,7 +29,7 @@ class ActivityContent extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            height: 120,
+            height: 80,
             color: Color(0xFF14213D),
           ),
           Padding(
