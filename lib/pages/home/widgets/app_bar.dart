@@ -1,15 +1,16 @@
+import 'package:app/localization/app_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 import 'package:app/utils/custom_date_utils.dart';
 
-String getFormattedDate(DateTime date) {
+String getFormattedDate({DateTime date, BuildContext context}) {
   if (CustomDateUtils.isToday(date)) {
-    return 'Hoje';
+    return AppLocalizations.of(context).translate('today');
   }
 
   if (CustomDateUtils.isYesterday(date)) {
-    return 'Ontem';
+    return AppLocalizations.of(context).translate('yesterday');
   }
 
   DateFormat format = DateFormat('dd MMM yy');
@@ -17,18 +18,23 @@ String getFormattedDate(DateTime date) {
   return format.format(date).toUpperCase();
 }
 
-AppBar buildHomeAppBar(
-    {DateTime date, VoidCallback onIncrement, VoidCallback onDecrement}) {
+AppBar buildHomeAppBar({
+  DateTime date,
+  VoidCallback onIncrement,
+  VoidCallback onDecrement,
+  BuildContext context,
+}) {
   return AppBar(
     automaticallyImplyLeading: false,
     brightness: Brightness.dark,
     backgroundColor: Color(0xFF14213D),
+    elevation: 0,
     title: buildTitle(),
     actions: buildActions(
-      date: date,
-      onIncrement: onIncrement,
-      onDecrement: onDecrement,
-    ),
+        date: date,
+        onIncrement: onIncrement,
+        onDecrement: onDecrement,
+        context: context),
   );
 }
 
@@ -47,6 +53,7 @@ List<Widget> buildActions({
   DateTime date,
   VoidCallback onIncrement,
   VoidCallback onDecrement,
+  BuildContext context,
 }) {
   return [
     Row(
@@ -59,7 +66,7 @@ List<Widget> buildActions({
           ),
         ),
         Container(width: 10),
-        Text(getFormattedDate(date)),
+        Text(getFormattedDate(date: date, context: context)),
         Container(width: 10),
         GestureDetector(
           onTap: onIncrement,

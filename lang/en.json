@@ -8,5 +8,16 @@
     "welcome_2_title": "Intuitive app",
     "welcome_2_text": "A simple and intuitive interface.",
 
-    "global_next": "Next"
+    "global_next": "Next",
+
+    "today": "Today",
+    "yesterday": "Yesterday",
+
+    "good_morning": "Good morning",
+    "good_afternoon": "Good afternoon",
+    "good_evening": "Good evening",
+
+    "overview": "Overview",
+
+    "no_activities": "No activities for now..."
 }

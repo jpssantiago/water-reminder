@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'package:app/pages/home/widgets/top_bar.dart';
+import 'package:app/pages/home/widgets/activity_content.dart';
+
 import 'package:app/pages/home/widgets/app_bar.dart';
 import 'package:app/providers/user_provider.dart';
 
@@ -35,13 +38,17 @@ class HomePage extends StatelessWidget {
             date: provider.user.selectedDate,
             onIncrement: () => incrementDay(provider),
             onDecrement: () => decrementDay(provider),
+            context: context,
           ),
           body: Container(
             width: size.width,
             height: size.height,
             color: Colors.white,
-            child: Column(
-              children: [],
+            child: ListView(
+              children: [
+                TopBar(user: provider.user),
+                ActivityContent(user: provider.user),
+              ],
             ),
           ),
         ),

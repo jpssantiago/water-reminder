@@ -9,5 +9,16 @@
     "welcome_2_title": "Aplicativo intuitivo",
     "welcome_2_text": "Nosso aplicativo foi desenvolvido pensando na experiência do usuário.",
 
-    "global_next": "Próximo"
+    "global_next": "Próximo",
+
+    "today": "Hoje",
+    "yesterday": "Ontem",
+
+    "good_morning": "Bom dia",
+    "good_afternoon": "Boa tarde",
+    "good_evening": "Boa noite",
+
+    "overview": "Desempenho",
+
+    "no_activities": "Sem atividades por enquanto..."
 }
