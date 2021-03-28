@@ -31,7 +31,7 @@ class _UserSetupState extends State<UserSetup> {
       );
 
       provider.setUser(user);
-      Navigator.of(context).pushReplacementNamed('home');
+      Navigator.of(context).pushReplacementNamed('/home');
     }
 
     final List<Widget> pages = UserSetupPages.getPages(

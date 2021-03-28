@@ -21,5 +21,8 @@
 
     "no_activities": "No activities for now...",
 
-    "water": "Water"
+    "water": "Water",
+
+    "delete_drink": "Delete drink",
+    "drink_deleted": "The selected drink has been deleted."
 }

@@ -1,3 +1,4 @@
+import 'package:app/localization/app_localization.dart';
 import 'package:app/models/drink.dart';
 import 'package:app/providers/user_provider.dart';
 import 'package:app/widgets/snack_message.dart';
@@ -14,7 +15,7 @@ void buildActivityItemBottomSheet(BuildContext context, Drink drink) {
           color: Colors.redAccent,
         ),
         title: Text(
-          'Deletar bebida.',
+          AppLocalizations.of(context).translate('delete_drink'),
           style: TextStyle(
             color: Colors.redAccent,
           ),
@@ -22,7 +23,10 @@ void buildActivityItemBottomSheet(BuildContext context, Drink drink) {
         onTap: () {
           Provider.of<UserProvider>(context, listen: false).deleteDrink(drink);
 
-          showSnackMessage(context, 'A bebida foi deletada com sucesso');
+          showSnackMessage(
+            context,
+            AppLocalizations.of(context).translate('drink_deleted'),
+          );
 
           Navigator.of(context).pop();
         },
