@@ -18,7 +18,7 @@ class TopBar extends StatelessWidget {
       child: Column(
         children: [
           TopBarHeader(user: user),
-          TopBarInfo(),
+          TopBarInfo(user: user),
         ],
       ),
     );

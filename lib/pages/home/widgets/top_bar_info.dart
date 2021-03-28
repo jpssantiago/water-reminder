@@ -33,7 +33,7 @@ class TopBarInfo extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  '900/',
+                  '${user.getCompletedValue().toStringAsFixed(0)}/',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 22,
@@ -41,7 +41,7 @@ class TopBarInfo extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  '1200',
+                  user.drinkGoal.toStringAsFixed(0),
                   style: TextStyle(
                     color: Color(0xFFC8C8C8),
                     fontSize: 16,
