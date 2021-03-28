@@ -23,6 +23,12 @@
     "no_activities": "Sem atividades por enquanto...",
 
     "water": "Água",
+    "coffee": "Café",
+    "tea": "Chá",
+    "milk": "Leite",
+    "soda": "Refrigerante",
+    "beer": "Cerveja",
+    "wine": "Vinho",
 
     "delete_drink": "Deletar bebida",
     "drink_deleted": "A bebida selecionada foi deletada."
