@@ -5,6 +5,7 @@ class TestData {
   static List<Drink> getDrinks() {
     return [
       Drink(
+        id: '1',
         type: DrinkType.water(),
         value: 300,
         date: DateTime.now(),

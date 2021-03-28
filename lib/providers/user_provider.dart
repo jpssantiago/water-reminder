@@ -1,4 +1,5 @@
 import 'package:app/data/test_data.dart';
+import 'package:app/models/drink.dart';
 import 'package:flutter/material.dart';
 
 import 'package:app/models/user.dart';
@@ -26,6 +27,12 @@ class UserProvider extends ChangeNotifier {
 
   void setDate(DateTime date) {
     _user.selectedDate = date;
+
+    notifyListeners();
+  }
+
+  void deleteDrink(Drink drink) {
+    _user.drinks.remove(drink);
 
     notifyListeners();
   }
