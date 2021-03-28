@@ -1,3 +1,4 @@
+import 'package:app/data/test_data.dart';
 import 'package:flutter/material.dart';
 
 import 'package:app/models/user.dart';
@@ -11,7 +12,7 @@ class UserProvider extends ChangeNotifier {
     return User(
       name: name,
       drinkGoal: drinkGoal,
-      drinks: [],
+      drinks: TestData.getDrinks(), // Replace with [] after test env.
       selectedDate: DateTime.now(),
       initialDate: DateTime.now(),
     );

@@ -1,4 +1,5 @@
 import 'package:app/models/user.dart';
+import 'package:app/pages/home/widgets/activity_grid.dart';
 import 'package:app/pages/home/widgets/empty_list_card.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,7 @@ class ActivityContent extends StatelessWidget {
         return EmptyListCard();
       }
 
-      return Container();
+      return ActivityGrid(user: user);
     }
 
     return Container(

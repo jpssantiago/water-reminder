@@ -23,7 +23,7 @@ class CustomDateUtils {
     } else if (hour >= 12 && hour <= 18) {
       return 'good_afternoon';
     } else {
-      return 'good_evening ';
+      return 'good_evening';
     }
   }
 }
