@@ -43,7 +43,7 @@ class TopBarHeader extends StatelessWidget {
                 ),
               ),
               Text(
-                user.name,
+                '${user.name}.',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
