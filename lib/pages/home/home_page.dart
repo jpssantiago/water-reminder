@@ -1,3 +1,4 @@
+import 'package:app/pages/home/widgets/floating_action_button.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -51,6 +52,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+          floatingActionButton: buildFloatingActionButton(context),
         ),
       ),
     );

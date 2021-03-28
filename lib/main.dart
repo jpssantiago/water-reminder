@@ -1,3 +1,4 @@
+import 'package:app/pages/add_drink/add_drink_page.dart';
 import 'package:app/pages/home/home_page.dart';
 import 'package:app/providers/user_provider.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         routes: {
           '/welcome': (context) => WelcomePage(),
           '/user_setup': (context) => UserSetup(),
-          'home': (context) => HomePage(),
+          '/home': (context) => HomePage(),
+          '/add_drink': (context) => AddDrinkPage(),
         },
         supportedLocales: LocalizationConfig.getSupportedLocales(),
         localizationsDelegates: LocalizationConfig.getLocalizationDelegates(),
