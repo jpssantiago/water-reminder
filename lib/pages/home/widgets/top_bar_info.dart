@@ -55,7 +55,7 @@ class TopBarInfo extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(3),
                 child: LinearProgressIndicator(
-                  value: .5,
+                  value: user.getCompletedValue() / user.drinkGoal,
                   backgroundColor: Color(0xFFC4C4C4),
                 ),
               ),
