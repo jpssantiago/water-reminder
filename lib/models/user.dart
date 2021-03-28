@@ -1,16 +1,17 @@
-import 'date.dart';
 import 'drink.dart';
 
 class User {
   String name;
   double drinkGoal;
   List<Drink> drinks;
-  Date selectedDate;
+  DateTime selectedDate;
+  DateTime initialDate;
 
   User({
     this.name,
     this.drinkGoal,
     this.drinks,
     this.selectedDate,
+    this.initialDate,
   });
 }
