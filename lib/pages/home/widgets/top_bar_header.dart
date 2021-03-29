@@ -19,6 +19,11 @@ class TopBarHeader extends StatelessWidget {
       return '$translated, ';
     }
 
+    String getFirstName() {
+      String firstName = user.name.split(' ')[0];
+      return firstName;
+    }
+
     return Padding(
       padding: const EdgeInsets.only(left: 15, right: 15),
       child: Row(
@@ -47,12 +52,16 @@ class TopBarHeader extends StatelessWidget {
                   fontWeight: FontWeight.w400,
                 ),
               ),
-              Text(
-                '${user.name}.',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
+              Container(
+                width: 80,
+                child: Text(
+                  '${getFirstName()}.',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  overflow: TextOverflow.ellipsis,
                 ),
               ),
             ],
