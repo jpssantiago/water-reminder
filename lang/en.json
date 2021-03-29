@@ -10,6 +10,12 @@
 
     "global_next": "Next",
 
+    "setup_name_title": "What is your name?",
+    "setup_name_label": "Your name...",
+
+    "setup_goal_title": "What is your daily goal (ml)?",
+    "setup_goal_label": "Your daily goal (ml)...",
+
     "today": "Today",
     "yesterday": "Yesterday",
 
@@ -39,5 +45,8 @@
 
     "settings": "Settings",
     "edit_user": "Edit user informations.",
-    "edit_drink_goal": "Edit daily drink goal."
+    "edit_drink_goal": "Edit daily drink goal.",
+
+    "global_save": "Save",
+    "drink_goal_saved": "Your daily drink goal was saved."
 }

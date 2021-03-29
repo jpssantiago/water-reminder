@@ -11,6 +11,12 @@
 
     "global_next": "Próximo",
 
+    "setup_name_title": "Como você gostaria de ser chamado?",
+    "setup_name_label": "Seu nome...",
+
+    "setup_goal_title": "Qual será a sua meta diária (em ml)?",
+    "setup_goal_label": "Meta diária (em ml)...",
+
     "today": "Hoje",
     "yesterday": "Ontem",
 
@@ -40,5 +46,8 @@
 
     "settings": "Configurações",
     "edit_user": "Editar perfil.",
-    "edit_drink_goal": "Editar meta diária."
+    "edit_drink_goal": "Editar meta diária.",
+
+    "global_save": "Salvar",
+    "drink_goal_saved": "Sua meta diária foi salva."
 }

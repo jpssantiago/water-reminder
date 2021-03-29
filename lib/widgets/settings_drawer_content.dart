@@ -1,3 +1,4 @@
+import 'package:app/widgets/edit_drink_goal_modal.dart';
 import 'package:flutter/material.dart';
 
 import 'package:app/models/user.dart';
@@ -36,7 +37,9 @@ class SettingsDrawerContent extends StatelessWidget {
               prefix: Icon(Icons.local_drink),
               text: AppLocalizations.of(context).translate('edit_drink_goal'),
               suffix: Text('${user.drinkGoal.toStringAsFixed(0)} ml'),
-              onTap: () {},
+              onTap: () {
+                buildEditDrinnkGoalModal(context, user);
+              },
             ),
           ],
         ),

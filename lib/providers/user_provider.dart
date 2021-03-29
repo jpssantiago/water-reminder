@@ -42,4 +42,10 @@ class UserProvider extends ChangeNotifier {
 
     notifyListeners();
   }
+
+  void editDrinkGoal(double drinkGoal) {
+    _user.drinkGoal = drinkGoal;
+
+    notifyListeners();
+  }
 }

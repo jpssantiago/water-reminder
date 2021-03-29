@@ -4,11 +4,13 @@ class Input extends StatelessWidget {
   final TextEditingController controller;
   final String label;
   final TextInputType inputType;
+  final VoidCallback onSubmit;
 
   const Input({
     @required this.controller,
     this.label,
     this.inputType,
+    @required this.onSubmit,
   });
 
   @override
@@ -22,6 +24,7 @@ class Input extends StatelessWidget {
           controller: controller,
           decoration: InputDecoration(labelText: label ?? 'Label'),
           keyboardType: inputType ?? TextInputType.text,
+          onSubmitted: (text) => onSubmit(),
         ),
       ),
     );
