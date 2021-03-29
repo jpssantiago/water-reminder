@@ -25,8 +25,6 @@ class ActivityContent extends StatelessWidget {
     }
 
     return Container(
-      height: size.height - (size.height * .36),
-      color: Color(0xFFEFEFEF),
       child: Stack(
         children: [
           Container(

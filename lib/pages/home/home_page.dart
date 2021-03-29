@@ -52,6 +52,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+          backgroundColor: Color(0xFFEFEFEF),
           floatingActionButton: buildFloatingActionButton(context),
         ),
       ),
