@@ -24,6 +24,8 @@ class TopBarHeader extends StatelessWidget {
       return firstName;
     }
 
+    final Size size = MediaQuery.of(context).size;
+
     return Padding(
       padding: const EdgeInsets.only(left: 15, right: 15),
       child: Row(
@@ -42,30 +44,34 @@ class TopBarHeader extends StatelessWidget {
               ),
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                formatGreeting(),
-                style: TextStyle(
-                  color: Colors.white.withOpacity(.85),
-                  fontSize: 16,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-              Container(
-                width: 60,
-                child: Text(
-                  '${getFirstName()}.',
+          Container(
+            width: size.width * .6,
+            height: 30,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  formatGreeting(),
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.white.withOpacity(.85),
                     fontSize: 16,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w400,
                   ),
-                  overflow: TextOverflow.ellipsis,
                 ),
-              ),
-            ],
+                Flexible(
+                  child: Text(
+                    '${getFirstName()}.',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    overflow: TextOverflow.ellipsis,
+                    softWrap: true,
+                  ),
+                ),
+              ],
+            ),
           ),
           Container(
             width: 36,
