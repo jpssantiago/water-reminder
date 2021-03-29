@@ -42,7 +42,12 @@ void buildEditDrinnkGoalModal(BuildContext context, User user) {
             Padding(
               padding: const EdgeInsets.only(left: 30, top: 30),
               child: Text(
-                  AppLocalizations.of(context).translate('setup_goal_title')),
+                AppLocalizations.of(context).translate('setup_goal_title'),
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
