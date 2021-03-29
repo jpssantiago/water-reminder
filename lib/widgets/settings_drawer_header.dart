@@ -21,7 +21,7 @@ class SettingsDrawerHeader extends StatelessWidget {
 
     return Container(
       height: statusBarHeight + 150,
-      color: Color(0xFF046582),
+      color: Color(0xFF14213D),
       child: Padding(
         padding: EdgeInsets.only(left: 10, top: statusBarHeight),
         child: Row(
