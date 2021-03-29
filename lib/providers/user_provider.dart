@@ -1,6 +1,6 @@
-import 'package:app/data/test_data.dart';
-import 'package:app/models/drink.dart';
 import 'package:flutter/material.dart';
+
+import 'package:app/models/drink.dart';
 
 import 'package:app/models/user.dart';
 
@@ -13,7 +13,7 @@ class UserProvider extends ChangeNotifier {
     return User(
       name: name,
       drinkGoal: drinkGoal,
-      drinks: TestData.getDrinks(), // Replace with [] after test env.
+      drinks: [], // Replace with [] after test env.
       selectedDate: DateTime.now(),
       initialDate: DateTime.now(),
     );
@@ -33,6 +33,12 @@ class UserProvider extends ChangeNotifier {
 
   void deleteDrink(Drink drink) {
     _user.drinks.remove(drink);
+
+    notifyListeners();
+  }
+
+  void addDrink(Drink drink) {
+    _user.drinks.add(drink);
 
     notifyListeners();
   }

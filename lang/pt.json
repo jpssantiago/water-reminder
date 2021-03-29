@@ -31,5 +31,7 @@
     "wine": "Vinho",
 
     "delete_drink": "Deletar bebida",
-    "drink_deleted": "A bebida selecionada foi deletada."
+    "drink_deleted": "A bebida selecionada foi deletada.",
+
+    "add_drink": "ADICIONAR"
 }
