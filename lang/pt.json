@@ -36,5 +36,9 @@
     "select_drinks_above": "Escolha uma dos tipos de bebidas abaixo.",
 
     "add_drink": "ADICIONAR",
-    "drink_added": "Bebida adicionada com sucesso."
+    "drink_added": "Bebida adicionada com sucesso.",
+
+    "settings": "Configurações",
+    "edit_user": "Editar perfil.",
+    "edit_drink_goal": "Editar meta diária."
 }

@@ -35,5 +35,9 @@
     "select_drinks_above": "Select one of the drink types above.",
 
     "add_drink": "ADD",
-    "drink_added": "Drink added."
+    "drink_added": "Drink added.",
+
+    "settings": "Settings",
+    "edit_user": "Edit user informations.",
+    "edit_drink_goal": "Edit daily drink goal."
 }
