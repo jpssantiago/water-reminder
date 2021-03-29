@@ -32,5 +32,6 @@
     "delete_drink": "Delete drink",
     "drink_deleted": "The selected drink has been deleted.",
 
-    "add_drink": "ADD"
+    "add_drink": "ADD",
+    "drink_added": "Drink added."
 }

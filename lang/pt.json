@@ -33,5 +33,6 @@
     "delete_drink": "Deletar bebida",
     "drink_deleted": "A bebida selecionada foi deletada.",
 
-    "add_drink": "ADICIONAR"
+    "add_drink": "ADICIONAR",
+    "drink_added": "Bebida adicionada com sucesso."
 }

@@ -1,8 +1,8 @@
+import 'package:flutter/material.dart';
+
 import 'package:app/models/drink_type.dart';
-import 'package:app/models/user.dart';
 import 'package:app/providers/user_provider.dart';
 import 'package:app/widgets/snack_message.dart';
-import 'package:flutter/material.dart';
 
 import 'package:app/localization/app_localization.dart';
 import 'package:app/models/drink.dart';
@@ -57,6 +57,10 @@ class _AddDrinkPageState extends State<AddDrinkPage> {
     }
 
     void handleSubmit() {
+      if (value <= 0) {
+        return;
+      }
+
       Drink drink = Drink(
         id: '1321',
         type: DrinkType.getTypes()[selectedType],
@@ -64,12 +68,18 @@ class _AddDrinkPageState extends State<AddDrinkPage> {
         date: DateTime.now(),
       );
 
-      var provider = Provider.of<UserProvider>(context, listen: false);
+      var provider = Provider.of<UserProvider>(
+        context,
+        listen: false,
+      );
       provider.addDrink(drink);
 
       Navigator.of(context).pop();
 
-      showSnackMessage(context, 'Bebida adicionada com sucesso.'); // translate
+      showSnackMessage(
+        context,
+        AppLocalizations.of(context).translate('drink_added'),
+      ); // translate
     }
 
     return Scaffold(
