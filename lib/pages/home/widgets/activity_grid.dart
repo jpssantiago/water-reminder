@@ -14,7 +14,7 @@ class ActivityGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double getHeight() {
-      double itemHeight = 100;
+      double itemHeight = 120;
       int count = user.getSelectedDrinks().length;
       int rows = (count / 3).ceil();
 
