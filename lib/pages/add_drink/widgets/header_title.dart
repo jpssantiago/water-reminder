@@ -1,3 +1,4 @@
+import 'package:app/localization/app_localization.dart';
 import 'package:flutter/material.dart';
 
 class HeaderTitle extends StatelessWidget {
@@ -6,7 +7,7 @@ class HeaderTitle extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 20),
       child: Text(
-        'Escolha uma das bebidas abaixo.',
+        AppLocalizations.of(context).translate('select_drinks_above'),
         style: TextStyle(
           color: Color(0xFF4F4F4F),
           fontSize: 14,
