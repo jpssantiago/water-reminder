@@ -24,12 +24,17 @@ class TopBarHeader extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-            width: 36,
-            height: 36,
-            decoration: BoxDecoration(
-              color: Colors.grey,
-              shape: BoxShape.circle,
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushNamed('/user_settings');
+            },
+            child: Container(
+              width: 36,
+              height: 36,
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                shape: BoxShape.circle,
+              ),
             ),
           ),
           Row(
