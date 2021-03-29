@@ -43,6 +43,7 @@ class TopBarHeader extends StatelessWidget {
             ),
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 formatGreeting(),
@@ -53,7 +54,7 @@ class TopBarHeader extends StatelessWidget {
                 ),
               ),
               Container(
-                width: 80,
+                width: 60,
                 child: Text(
                   '${getFirstName()}.',
                   style: TextStyle(
