@@ -1,3 +1,4 @@
+import 'package:app/localization/app_localization.dart';
 import 'package:app/models/user.dart';
 import 'package:flutter/material.dart';
 
@@ -38,7 +39,7 @@ class SettingsDrawerHeader extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  'Olá, ',
+                  '${AppLocalizations.of(context).translate('hello')}, ',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,

@@ -48,5 +48,7 @@
     "edit_drink_goal": "Edit daily drink goal.",
 
     "global_save": "Save",
-    "drink_goal_saved": "Your daily drink goal was saved."
+    "drink_goal_saved": "Your daily drink goal was saved.",
+
+    "hello": "Hello"
 }
