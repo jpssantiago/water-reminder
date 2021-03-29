@@ -12,8 +12,6 @@ class ActivityContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
-
     Widget buildActivity() {
       final list = user.getSelectedDrinks();
 
