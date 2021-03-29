@@ -1,6 +1,8 @@
-import 'package:app/pages/home/widgets/floating_action_button.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'package:app/widgets/drawer.dart';
+import 'package:app/pages/home/widgets/floating_action_button.dart';
 
 import 'package:app/pages/home/widgets/top_bar.dart';
 import 'package:app/pages/home/widgets/activity_content.dart';
@@ -35,6 +37,7 @@ class HomePage extends StatelessWidget {
       builder: (context, provider, child) => WillPopScope(
         onWillPop: () async => false,
         child: Scaffold(
+          drawerEnableOpenDragGesture: false,
           appBar: buildHomeAppBar(
             date: provider.user.selectedDate,
             onIncrement: () => incrementDay(provider),
@@ -54,6 +57,7 @@ class HomePage extends StatelessWidget {
           ),
           backgroundColor: Color(0xFFEFEFEF),
           floatingActionButton: buildFloatingActionButton(context),
+          drawer: buildDrawer(context: context, user: provider.user),
         ),
       ),
     );

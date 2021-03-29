@@ -31,7 +31,7 @@ class TopBarHeader extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: () {
-              Navigator.of(context).pushNamed('/user_settings');
+              Scaffold.of(context).openDrawer();
             },
             child: Container(
               width: 36,
