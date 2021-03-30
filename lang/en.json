@@ -1,31 +1,15 @@
 {
-    "welcome_0_title": "Healthy eating",
-    "welcome_0_text": "A balanced diet is essential to maintain a healthy life.",
-
-    "welcome_1_title": "Monitor your performance",
-    "welcome_1_text": "Monitor your performance with charts, statistics, tips, and more.",
-
-    "welcome_2_title": "Intuitive app",
-    "welcome_2_text": "A simple and intuitive interface.",
-
-    "global_next": "Next",
-
-    "setup_name_title": "What is your name?",
-    "setup_name_label": "Your name...",
-
-    "setup_goal_title": "What is your daily goal (ml)?",
-    "setup_goal_label": "Your daily goal (ml)...",
-
-    "today": "Today",
-    "yesterday": "Yesterday",
-
+    "next": "Next",
+    "save": "Save",
+    "add": "Add",
+    "settings": "Settings",
+    "overview": "Overview",
+    "hello": "Hello",
     "good_morning": "Good morning",
     "good_afternoon": "Good afternoon",
     "good_evening": "Good evening",
-
-    "overview": "Overview",
-
-    "no_activities": "No activities for now...",
+    "today": "Today",
+    "yesterday": "Yesterday",
 
     "water": "Water",
     "coffee": "Coffee",
@@ -35,20 +19,27 @@
     "beer": "Beer",
     "wine": "Wine",
 
+    "welcome_0_title": "Healthy eating",
+    "welcome_1_title": "Monitor your performance",
+    "welcome_2_title": "Intuitive app",
+    "welcome_0_text": "A balanced diet is essential to maintain a healthy life.",
+    "welcome_1_text": "Monitor your performance with charts, statistics, tips, and more.",
+    "welcome_2_text": "A simple and intuitive interface.",
+
+    "edit_user": "Edit user informations.",
+    "user_saved": "Used informations saved.",
+    "edit_drink_goal": "Edit daily drink goal.",
+    "drink_goal_saved": "Daily drink goal saved.",
+
     "delete_drink": "Delete drink",
-    "drink_deleted": "The selected drink has been deleted.",
+    "drink_deleted": "Drink deleted.",
 
-    "select_drinks_above": "Select one of the drink types above.",
-
-    "add_drink": "ADD",
     "drink_added": "Drink added.",
 
-    "settings": "Settings",
-    "edit_user": "Edit user informations.",
-    "edit_drink_goal": "Edit daily drink goal.",
+    "no_activities": "No activities for now.",
 
-    "global_save": "Save",
-    "drink_goal_saved": "Your daily drink goal was saved.",
-
-    "hello": "Hello"
+    "setup_name_title": "What is your name?",
+    "setup_goal_title": "What is your daily goal (ml)?",
+    "setup_name_label": "Your name...",
+    "setup_goal_label": "Your daily goal (ml)..."
 }

@@ -1,32 +1,15 @@
-
 {
-    "welcome_0_title": "Alimentação saudável",
-    "welcome_0_text": "Uma alimentação balanceada é essencial para manter uma vida saudável.",
-
-    "welcome_1_title": "Monitore seu desempenho",
-    "welcome_1_text": "Monitore seu desempenho com gráficos, estatísticas, dicas e muito mais.",
-
-    "welcome_2_title": "Aplicativo intuitivo",
-    "welcome_2_text": "Nosso aplicativo foi desenvolvido pensando na experiência do usuário.",
-
-    "global_next": "Próximo",
-
-    "setup_name_title": "Como você gostaria de ser chamado?",
-    "setup_name_label": "Seu nome...",
-
-    "setup_goal_title": "Qual será a sua meta diária (em ml)?",
-    "setup_goal_label": "Meta diária (em ml)...",
-
-    "today": "Hoje",
-    "yesterday": "Ontem",
-
+    "next": "Próximo",
+    "save": "Salvar",
+    "add": "Adicionar",
+    "settings": "Configurações",
+    "overview": "Desempenho",
+    "hello": "Olá",
     "good_morning": "Bom dia",
     "good_afternoon": "Boa tarde",
     "good_evening": "Boa noite",
-
-    "overview": "Desempenho",
-
-    "no_activities": "Sem atividades por enquanto...",
+    "today": "Hoje",
+    "yesterday": "Ontem",
 
     "water": "Água",
     "coffee": "Café",
@@ -36,20 +19,27 @@
     "beer": "Cerveja",
     "wine": "Vinho",
 
-    "delete_drink": "Deletar bebida",
-    "drink_deleted": "A bebida selecionada foi deletada.",
+    "welcome_0_title": "Alimentação saudável",
+    "welcome_1_title": "Monitore seu desempenho",
+    "welcome_2_title": "Aplicativo intuitivo",
+    "welcome_0_text": "Uma alimentação balanceada é essencial para manter uma vida saudável.",
+    "welcome_1_text": "Monitore seu desempenho com gráficos, estatísticas, dicas e muito mais.",
+    "welcome_2_text": "Nosso aplicativo foi desenvolvido pensando na experiência do usuário.",
 
-    "select_drinks_above": "Escolha uma dos tipos de bebidas abaixo.",
-
-    "add_drink": "ADICIONAR",
-    "drink_added": "Bebida adicionada com sucesso.",
-
-    "settings": "Configurações",
-    "edit_user": "Editar perfil.",
+    "edit_user": "Editar informações do usuário.",
+    "user_saved": "As alterações foram salvas.",
     "edit_drink_goal": "Editar meta diária.",
+    "drink_goal_saved": "Meta diária editada.",
 
-    "global_save": "Salvar",
-    "drink_goal_saved": "Sua meta diária foi salva.",
+    "delete_drink": "Deletar bebida",
+    "drink_deleted": "Bebida deletada.",
 
-    "hello": "Olá"
+    "drink_added": "Bebida adicionada.",
+
+    "no_activities": "Sem atividades por agora.",
+
+    "setup_name_title": "Como você gostaria de ser chamado?",
+    "setup_goal_title": "Qual será a sua meta diária (em ml)?",
+    "setup_name_label": "Seu nome...",
+    "setup_goal_label": "Meta diária (em ml)..."
 }

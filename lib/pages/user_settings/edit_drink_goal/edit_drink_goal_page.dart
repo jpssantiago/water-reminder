@@ -50,11 +50,11 @@ class EditDrinkGoalPage extends StatelessWidget {
               controller: controller,
               label: AppLocalizations.of(context).translate('setup_goal_label'),
               onSubmit: handleSubmit,
+              inputType: TextInputType.number,
             ),
             ExpandedButton(
-              text: AppLocalizations.of(context)
-                  .translate('global_save')
-                  .toUpperCase(),
+              text:
+                  AppLocalizations.of(context).translate('save').toUpperCase(),
               onTap: handleSubmit,
             )
           ],

@@ -92,16 +92,9 @@ class _AddDrinkPageState extends State<AddDrinkPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween, // spaceBetween
           children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                HeaderTitle(), // Translate
-                Container(height: 10),
-                DrinkList(
-                  selectedType: selectedType,
-                  onTap: changeSelectedType,
-                ),
-              ],
+            DrinkList(
+              selectedType: selectedType,
+              onTap: changeSelectedType,
             ),
             DrinkController(
               value: value,
@@ -111,7 +104,7 @@ class _AddDrinkPageState extends State<AddDrinkPage> {
               onDecrement: decrementBy10,
             ),
             ExpandedButton(
-              text: AppLocalizations.of(context).translate('add_drink'),
+              text: AppLocalizations.of(context).translate('add'),
               onTap: handleSubmit,
             )
           ],

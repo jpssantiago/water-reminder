@@ -45,9 +45,7 @@ class UserName extends StatelessWidget {
           Spacer(flex: 1),
           ExpandedButton(
             onTap: handleSubmit,
-            text: AppLocalizations.of(context)
-                .translate('global_next')
-                .toUpperCase(),
+            text: AppLocalizations.of(context).translate('next').toUpperCase(),
           ),
         ],
       ),

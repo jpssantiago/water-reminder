@@ -58,7 +58,7 @@ class _WelcomePageState extends State<WelcomePage> {
               },
               text: AppLocalizations.of(context)
                   .translate(
-                    'global_next',
+                    'next',
                   )
                   .toUpperCase(),
             ),
