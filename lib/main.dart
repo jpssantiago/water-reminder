@@ -1,3 +1,4 @@
+import 'package:app/pages/loading/loading_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -17,21 +18,24 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => UserProvider(),
-      child: MaterialApp(
-        initialRoute: '/welcome',
-        routes: {
-          '/welcome': (context) => WelcomePage(),
-          '/user_setup': (context) => UserSetup(),
-          '/home': (context) => HomePage(),
-          '/add_drink': (context) => AddDrinkPage(),
-          '/edit_user': (context) => EditUserPage(),
-          '/edit_drink_goal': (context) => EditDrinkGoalPage(),
-        },
-        supportedLocales: LocalizationConfig.getSupportedLocales(),
-        localizationsDelegates: LocalizationConfig.getLocalizationDelegates(),
-        localeResolutionCallback: LocalizationConfig.localeResolutionCallback,
+    return MaterialApp(
+      home: ChangeNotifierProvider(
+        create: (context) => UserProvider(),
+        child: MaterialApp(
+          initialRoute: '/loading',
+          routes: {
+            '/loading': (context) => LoadingPage(),
+            '/welcome': (context) => WelcomePage(),
+            '/user_setup': (context) => UserSetup(),
+            '/home': (context) => HomePage(),
+            '/add_drink': (context) => AddDrinkPage(),
+            '/edit_user': (context) => EditUserPage(),
+            '/edit_drink_goal': (context) => EditDrinkGoalPage(),
+          },
+          supportedLocales: LocalizationConfig.getSupportedLocales(),
+          localizationsDelegates: LocalizationConfig.getLocalizationDelegates(),
+          localeResolutionCallback: LocalizationConfig.localeResolutionCallback,
+        ),
       ),
     );
   }

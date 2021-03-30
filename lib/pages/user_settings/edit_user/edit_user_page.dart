@@ -1,3 +1,4 @@
+import 'package:app/controllers/user_controller.dart';
 import 'package:app/widgets/snack_message.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -20,6 +21,8 @@ class EditUserPage extends StatelessWidget {
       String text = controller.text;
 
       if (text == null || text == '') return;
+
+      UserController.editUserName(text);
 
       Provider.of<UserProvider>(context, listen: false).editName(text);
 

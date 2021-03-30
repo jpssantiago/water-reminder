@@ -7,13 +7,15 @@ import 'package:app/widgets/snack_message.dart';
 import 'package:app/localization/app_localization.dart';
 import 'package:app/models/drink.dart';
 import 'package:app/pages/add_drink/widgets/drink_list.dart';
-import 'package:app/pages/add_drink/widgets/header_title.dart';
 import 'package:app/widgets/expanded_button.dart';
 import 'package:app/widgets/white_app_bar.dart';
 import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 
 import 'widgets/drink_controller.dart';
+
+import 'package:app/controllers/drink_controller.dart'
+    as DatabaseDrinkController;
 
 class AddDrinkPage extends StatefulWidget {
   @override
@@ -68,6 +70,8 @@ class _AddDrinkPageState extends State<AddDrinkPage> {
         value: value,
         date: DateTime.now(),
       );
+
+      DatabaseDrinkController.DrinkController.addDrink(drink);
 
       var provider = Provider.of<UserProvider>(
         context,

@@ -69,4 +69,12 @@ class DrinkType {
       wine(),
     ];
   }
+
+  static DrinkType fromName(String name) {
+    for (DrinkType type in getTypes()) {
+      if (type.name == name) {
+        return type;
+      }
+    }
+  }
 }

@@ -1,3 +1,5 @@
+import 'package:app/controllers/drink_controller.dart';
+
 import 'drink.dart';
 
 class User {
@@ -46,5 +48,26 @@ class User {
     }
 
     return list;
+  }
+
+  static Future<User> fromJson(json) async {
+    List<String> date = json['initial_date'].split('/');
+    DateTime initialDate = DateTime(
+      int.parse(
+        date[2],
+      ),
+      int.parse(date[1]),
+      int.parse(date[0]),
+    );
+
+    List<Drink> drinks = await DrinkController.getDrinks();
+
+    return User(
+      name: json['name'],
+      drinkGoal: double.parse(json['drink_goal'].toString()),
+      initialDate: initialDate,
+      selectedDate: DateTime.now(),
+      drinks: drinks,
+    );
   }
 }

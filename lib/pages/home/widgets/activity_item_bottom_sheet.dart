@@ -1,3 +1,4 @@
+import 'package:app/controllers/drink_controller.dart';
 import 'package:app/localization/app_localization.dart';
 import 'package:app/models/drink.dart';
 import 'package:app/providers/user_provider.dart';
@@ -21,6 +22,8 @@ void buildActivityItemBottomSheet(BuildContext context, Drink drink) {
           ),
         ),
         onTap: () {
+          DrinkController.deleteDrink(drink.id);
+
           Provider.of<UserProvider>(context, listen: false).deleteDrink(drink);
 
           showSnackMessage(

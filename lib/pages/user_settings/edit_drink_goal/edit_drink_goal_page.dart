@@ -1,3 +1,4 @@
+import 'package:app/controllers/user_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -23,6 +24,8 @@ class EditDrinkGoalPage extends StatelessWidget {
 
       double value = double.parse(text);
       if (value <= 0) return;
+
+      UserController.editDrinkGoal(value);
 
       Provider.of<UserProvider>(context, listen: false).editDrinkGoal(value);
 

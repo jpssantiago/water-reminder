@@ -1,3 +1,4 @@
+import 'package:app/controllers/user_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -30,6 +31,7 @@ class _UserSetupState extends State<UserSetup> {
         drinkGoal: drinkGoal,
       );
 
+      UserController.addUser(user);
       provider.setUser(user);
       Navigator.of(context).pushReplacementNamed('/home');
     }
