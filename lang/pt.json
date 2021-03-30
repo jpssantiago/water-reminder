@@ -40,6 +40,6 @@
 
     "setup_name_title": "Como você gostaria de ser chamado?",
     "setup_goal_title": "Qual será a sua meta diária (em ml)?",
-    "setup_name_label": "Seu nome...",
-    "setup_goal_label": "Meta diária (em ml)..."
+    "setup_name_label": "Nome",
+    "setup_goal_label": "Meta diária (em ml)"
 }

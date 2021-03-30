@@ -43,10 +43,9 @@ class _LoadingPageState extends State<LoadingPage> {
         height: size.height,
         color: Colors.white,
         child: Center(
-          child: Container(
-            width: 64,
-            height: 64,
-            child: CircularProgressIndicator(),
+          child: Image.asset(
+            'assets/images/white_icon.png',
+            height: 250,
           ),
         ),
       ),
