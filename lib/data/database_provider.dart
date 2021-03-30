@@ -21,7 +21,7 @@ class DatabaseProvider {
       onCreate: (db, version) async {
         await db.execute('''
         CREATE TABLE users (
-          drink_goal NUMBER, initial_date TEXT
+          name TEXT, drink_goal NUMBER, initial_date TEXT, image TEXT
         )
         ''');
 

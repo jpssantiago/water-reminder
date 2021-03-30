@@ -11,6 +11,7 @@ import 'package:app/pages/add_drink/widgets/header_title.dart';
 import 'package:app/widgets/expanded_button.dart';
 import 'package:app/widgets/white_app_bar.dart';
 import 'package:provider/provider.dart';
+import 'package:uuid/uuid.dart';
 
 import 'widgets/drink_controller.dart';
 
@@ -62,7 +63,7 @@ class _AddDrinkPageState extends State<AddDrinkPage> {
       }
 
       Drink drink = Drink(
-        id: '1321',
+        id: Uuid().v4(),
         type: DrinkType.getTypes()[selectedType],
         value: value,
         date: DateTime.now(),
