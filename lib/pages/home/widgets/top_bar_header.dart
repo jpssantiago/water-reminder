@@ -38,9 +38,9 @@ class TopBarHeader extends StatelessWidget {
             child: Container(
               width: 36,
               height: 36,
-              decoration: BoxDecoration(
-                color: Colors.grey,
-                shape: BoxShape.circle,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(18),
+                child: Image.asset(user.image),
               ),
             ),
           ),

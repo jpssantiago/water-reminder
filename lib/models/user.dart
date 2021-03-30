@@ -6,6 +6,7 @@ class User {
   List<Drink> drinks;
   DateTime selectedDate;
   DateTime initialDate;
+  String image = 'assets/images/no_profile_image.jpg'; // Temporary
 
   User({
     this.name,

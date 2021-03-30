@@ -30,9 +30,9 @@ class SettingsDrawerHeader extends StatelessWidget {
             Container(
               width: 64,
               height: 64,
-              decoration: BoxDecoration(
-                color: Colors.grey,
-                shape: BoxShape.circle,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(32),
+                child: Image.asset(user.image),
               ),
             ),
             Container(width: 10),
