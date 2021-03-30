@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ufittness.waterreminder">
+    package="com.ufittness.water_reminder">
    <application
         android:label="uFittness"
         android:icon="@mipmap/ic_launcher">
