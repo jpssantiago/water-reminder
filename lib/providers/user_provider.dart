@@ -43,6 +43,12 @@ class UserProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  void editName(String name) {
+    _user.name = name;
+
+    notifyListeners();
+  }
+
   void editDrinkGoal(double drinkGoal) {
     _user.drinkGoal = drinkGoal;
 

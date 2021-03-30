@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:app/localization/app_localization.dart';
-
 class CustomTitle extends StatelessWidget {
+  final String title;
+
   const CustomTitle({
     Key key,
+    this.title,
   }) : super(key: key);
 
   @override
@@ -12,9 +13,7 @@ class CustomTitle extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 20, right: 20),
       child: Text(
-        AppLocalizations.of(context).translate(
-          'setup_goal_title',
-        ),
+        title ?? 'Title',
         style: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,

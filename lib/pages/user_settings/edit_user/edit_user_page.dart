@@ -1,3 +1,4 @@
+import 'package:app/widgets/snack_message.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -6,11 +7,10 @@ import 'package:app/pages/user_settings/widgets/custom_title.dart';
 import 'package:app/providers/user_provider.dart';
 import 'package:app/widgets/expanded_button.dart';
 import 'package:app/widgets/input.dart';
-import 'package:app/widgets/snack_message.dart';
 
 import 'package:app/widgets/white_app_bar.dart';
 
-class EditDrinkGoalPage extends StatelessWidget {
+class EditUserPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final TextEditingController controller = TextEditingController();
@@ -21,17 +21,16 @@ class EditDrinkGoalPage extends StatelessWidget {
 
       if (text == null || text == '') return;
 
-      double value = double.parse(text);
-      if (value <= 0) return;
+      Provider.of<UserProvider>(context, listen: false).editName(text);
 
-      Provider.of<UserProvider>(context, listen: false).editDrinkGoal(value);
-
-      Navigator.of(context).pop(); // Edit page
+      Navigator.of(context).pop(); // Editar nome
       Navigator.of(context).pop(); // Drawer
 
       showSnackMessage(
         context,
-        AppLocalizations.of(context).translate('drink_goal_saved'),
+        AppLocalizations.of(context).translate(
+          'user_saved',
+        ),
       );
     }
 
@@ -42,23 +41,27 @@ class EditDrinkGoalPage extends StatelessWidget {
         height: size.height,
         color: Colors.white,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             CustomTitle(
               title: AppLocalizations.of(context).translate(
-                'setup_goal_title',
+                'setup_name_title',
               ),
             ),
             Input(
               controller: controller,
-              label: AppLocalizations.of(context).translate('setup_goal_label'),
               onSubmit: handleSubmit,
-              inputType: TextInputType.number,
+              label: AppLocalizations.of(context).translate(
+                'setup_name_label',
+              ),
             ),
             ExpandedButton(
-              text:
-                  AppLocalizations.of(context).translate('save').toUpperCase(),
+              text: AppLocalizations.of(context)
+                  .translate(
+                    'save',
+                  )
+                  .toUpperCase(),
               onTap: handleSubmit,
             )
           ],

@@ -30,7 +30,9 @@ class SettingsDrawerContent extends StatelessWidget {
                 quarterTurns: 1,
                 child: Icon(Icons.navigation),
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushNamed('/edit_user');
+              },
             ),
             SettingsDrawerItem(
               prefix: Icon(Icons.local_drink),
