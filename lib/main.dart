@@ -1,6 +1,8 @@
-import 'package:app/pages/loading/loading_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+
+import 'package:app/pages/loading/loading_page.dart';
 
 import 'package:app/pages/add_drink/add_drink_page.dart';
 import 'package:app/pages/home/home_page.dart';
@@ -18,6 +20,11 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+
     return MaterialApp(
       home: ChangeNotifierProvider(
         create: (context) => UserProvider(),

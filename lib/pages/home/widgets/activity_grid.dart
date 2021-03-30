@@ -54,6 +54,7 @@ class ActivityGrid extends StatelessWidget {
           mainAxisExtent: 100,
         ),
         children: buildList(),
+        physics: NeverScrollableScrollPhysics(),
       ),
     );
   }
