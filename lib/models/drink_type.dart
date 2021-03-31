@@ -76,5 +76,7 @@ class DrinkType {
         return type;
       }
     }
+
+    return null;
   }
 }

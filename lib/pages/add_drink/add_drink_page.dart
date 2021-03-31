@@ -85,6 +85,12 @@ class _AddDrinkPageState extends State<AddDrinkPage> {
         context,
         AppLocalizations.of(context).translate('drink_added'),
       ); // translate
+
+      // TODO: Show screen with completed goal message.
+      // var user = provider.user;
+      // if (user.getCompletedValue() >= user.drinkGoal) {
+      //   print('completou');
+      // }
     }
 
     return Scaffold(

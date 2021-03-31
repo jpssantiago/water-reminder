@@ -19,12 +19,16 @@ class _UserSetupState extends State<UserSetup> {
   Widget build(BuildContext context) {
     void onUserSet(String text) {
       setState(() {
+        if (text == null || text == '') return;
+
         name = text;
         activePage = 1;
       });
     }
 
     void onDrinkGoalSet(double drinkGoal) {
+      if (drinkGoal == null || drinkGoal <= 0) return;
+
       final provider = Provider.of<UserProvider>(context, listen: false);
       final user = provider.createUser(
         name: name,
