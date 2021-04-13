@@ -25,24 +25,23 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
 
-    return MaterialApp(
-      home: ChangeNotifierProvider(
-        create: (context) => UserProvider(),
-        child: MaterialApp(
-          initialRoute: '/loading',
-          routes: {
-            '/loading': (context) => LoadingPage(),
-            '/welcome': (context) => WelcomePage(),
-            '/user_setup': (context) => UserSetup(),
-            '/home': (context) => HomePage(),
-            '/add_drink': (context) => AddDrinkPage(),
-            '/edit_user': (context) => EditUserPage(),
-            '/edit_drink_goal': (context) => EditDrinkGoalPage(),
-          },
-          supportedLocales: LocalizationConfig.getSupportedLocales(),
-          localizationsDelegates: LocalizationConfig.getLocalizationDelegates(),
-          localeResolutionCallback: LocalizationConfig.localeResolutionCallback,
-        ),
+    return ChangeNotifierProvider(
+      create: (context) => UserProvider(),
+      child: new MaterialApp(
+        debugShowCheckedModeBanner: false,
+        initialRoute: '/loading',
+        routes: {
+          '/loading': (context) => LoadingPage(),
+          '/welcome': (context) => WelcomePage(),
+          '/user_setup': (context) => UserSetup(),
+          '/home': (context) => HomePage(),
+          '/add_drink': (context) => AddDrinkPage(),
+          '/edit_user': (context) => EditUserPage(),
+          '/edit_drink_goal': (context) => EditDrinkGoalPage(),
+        },
+        supportedLocales: LocalizationConfig.getSupportedLocales(),
+        localizationsDelegates: LocalizationConfig.getLocalizationDelegates(),
+        localeResolutionCallback: LocalizationConfig.localeResolutionCallback,
       ),
     );
   }
